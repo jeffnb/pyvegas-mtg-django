@@ -49,6 +49,5 @@ class Card(models.Model):
     def color_count(self):
         return self.colors.count()
 
-
     def __str__(self):
         return self.name
