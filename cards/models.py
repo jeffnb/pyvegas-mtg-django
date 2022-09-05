@@ -24,7 +24,7 @@ class Edition(models.Model):
     code = models.CharField(max_length=3)
 
     def __str__(self):
-        return self.name
+        return f"{self.name}({self.code})"
 
     class Meta:
         ordering = ['name']
@@ -45,7 +45,10 @@ class Card(models.Model):
     edition = models.ForeignKey(Edition, on_delete=models.CASCADE)
     colors = models.ManyToManyField(Color)
 
+    @property
+    def color_count(self):
+        return self.colors.count()
+
 
     def __str__(self):
         return self.name
-
