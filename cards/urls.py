@@ -5,5 +5,5 @@ from cards import views
 app_name = 'cards'
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', views.form_create, name='create-card'),
 ]

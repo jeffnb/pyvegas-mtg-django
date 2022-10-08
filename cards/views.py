@@ -7,7 +7,7 @@ from django.shortcuts import render
 from cards.forms import CardForm
 
 
-def index(request):
+def form_create(request):
 
     if request.method == 'POST':
         form = CardForm(request.POST)
@@ -18,4 +18,4 @@ def index(request):
     else:
         form = CardForm()
 
-    return render(request, 'cards/index.html', {'name': 'John', 'form': form})
+    return render(request, 'cards/card_create.html', {'name': 'John', 'form': form})
