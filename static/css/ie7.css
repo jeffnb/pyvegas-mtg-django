@@ -1,0 +1,7 @@
+/* Website template by freewebsitetemplates.com */
+#header div ul li {
+	display: inline;
+}
+#header div ul li a {
+	display: inline-block;
+}

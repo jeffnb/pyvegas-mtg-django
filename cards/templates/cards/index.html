@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Random MTG Cards{% endblock %}
+{% block body %}
+<div>
+			<ul id="featured">
+                {% for card in cards %}
+                <li>
+                    <a href="#"><img src="{{ card.image_url }}" alt="{{ card.name }}"></a>
+					<h2>{{ card.name }}</h2>
+					<h3>{{ card.edition }}</h3>
+                </li>
+                {% endfor %}
+			</ul>
+			<span>This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you&#39;re free to use this website template without linking back to us. If you&#39;re having problems editing this website template, then don&#39;t hesitate to ask for help on the <a href="http://www.freewebsitetemplates.com/forums/">Forums</a>.</span>
+</div>
+{% endblock %}
