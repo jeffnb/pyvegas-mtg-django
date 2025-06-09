@@ -1,1 +1,10 @@
 scripts/*
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*~
+*.egg-info/
+dist/
+build/
+*.db
