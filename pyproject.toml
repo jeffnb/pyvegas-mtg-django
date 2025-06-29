@@ -22,4 +22,6 @@ build-backend = "hatchling.build"
 packages = ["cards", "mtgcards"]
 
 [tool.uv]
-dev-dependencies = []
+dev-dependencies = [
+    "coverage>=7.6.1",
+]
