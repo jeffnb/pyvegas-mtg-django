@@ -27,6 +27,24 @@
 * Create superuser: `uv run python manage.py createsuperuser`
 * Django shell: `uv run python manage.py shell_plus`
 
+## Testing
+* Run all tests: `uv run python manage.py test`
+* Run specific app tests: `uv run python manage.py test cards`
+* Run with verbose output: `uv run python manage.py test --verbosity=2`
+* Run specific test class: `uv run python manage.py test cards.tests.CardModelTest`
+* Run specific test method: `uv run python manage.py test cards.tests.CardModelTest.test_card_creation`
+
+### Test Coverage
+* Generate coverage report: `uv run coverage run --source='.' manage.py test`
+* View coverage report: `uv run coverage report`
+* Generate HTML coverage: `uv run coverage html` (creates `htmlcov/` directory)
+
+The project includes comprehensive unit tests covering:
+- **Model tests**: Color, Edition, and Card models with relationships and properties
+- **Form tests**: CardForm validation and functionality  
+- **View tests**: Form creation and validation workflows
+- **Integration tests**: Complete card creation workflows with colors and editions
+
 ## Adding Dependencies  
 * Add runtime dependency: `uv add package-name`
 * Add dev dependency: `uv add --dev package-name`
