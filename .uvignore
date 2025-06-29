@@ -1,0 +1,32 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Django stuff
+*.log
+db.sqlite3
+media/
+
+# Local development settings
+.env
+.env.local
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Original template files (not needed for package installation)
+original-template/
