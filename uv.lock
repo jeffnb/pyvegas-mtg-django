@@ -56,18 +56,14 @@ name = "pyvegas-mtg-django"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
-    { name = "asgiref" },
     { name = "django" },
     { name = "django-extensions" },
-    { name = "sqlparse" },
 ]
 
 [package.metadata]
 requires-dist = [
-    { name = "asgiref", specifier = "==3.5.2" },
     { name = "django", specifier = "==4.0.5" },
     { name = "django-extensions", specifier = "==3.1.5" },
-    { name = "sqlparse", specifier = "==0.4.2" },
 ]
 provides-extras = ["dev"]
 
