@@ -79,8 +79,11 @@ target/
 profile_default/
 ipython_config.py
 
-# pyenv
-.python-version
+# pipenv
+Pipfile.lock
+
+# uv virtual environment (but keep uv.lock for reproducibility)
+.venv/
 
 # celery beat schedule file
 celerybeat-schedule
