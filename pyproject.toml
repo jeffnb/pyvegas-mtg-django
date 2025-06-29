@@ -1,0 +1,32 @@
+[project]
+name = "pyvegas-mtg-django"
+version = "0.1.0"
+description = "Magic the Gathering Django ORM demo application"
+requires-python = ">=3.8"
+python = "/usr/bin/python3"
+dependencies = [
+    "asgiref==3.5.2",
+    "Django==4.0.5",
+    "django-extensions==3.1.5",
+    "sqlparse==0.4.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "django-extensions>=3.1.5",
+]
+
+[project.scripts]
+manage = "manage:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["cards", "mtgcards"]
+
+[tool.uv]
+dev-dependencies = [
+    "django-extensions>=3.1.5",
+]
