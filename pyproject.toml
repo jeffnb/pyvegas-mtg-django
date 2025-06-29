@@ -12,9 +12,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = [
-    "django-extensions>=3.1.5",
-]
+dev = []
 
 [project.scripts]
 manage = "manage:main"
@@ -27,6 +25,4 @@ build-backend = "hatchling.build"
 packages = ["cards", "mtgcards"]
 
 [tool.uv]
-dev-dependencies = [
-    "django-extensions>=3.1.5",
-]
+dev-dependencies = []
