@@ -6,6 +6,11 @@
 * `uv sync` - This will create a virtual environment and install all dependencies
 * Activate the environment: `source .venv/bin/activate` (or use `uv run` prefix for commands)
 
+**Note:** If you encounter SQLite import errors, ensure your Python installation includes SQLite support. Some Python installations (like pyenv without proper build dependencies) may lack SQLite. You can:
+- Use system Python: `uv sync --python python3`
+- Install SQLite development headers before building Python with pyenv
+- Use a Python distribution that includes SQLite (like the official Python.org installers)
+
 ## Legacy Install instructions (pip/virtualenv)
 * Clone the repo
 * Make sure to use your favorite virtualenv 
