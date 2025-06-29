@@ -1,5 +1,8 @@
 # Magic the Gathering Django ORM demo
 
+
+
+
 ## Install instructions
 * clone the repo
 * Make sure to use your favorite virtualenv 
