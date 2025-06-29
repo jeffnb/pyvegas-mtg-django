@@ -2,10 +2,10 @@
 name = "pyvegas-mtg-django"
 version = "0.1.0"
 description = "Magic the Gathering Django ORM demo application"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 dependencies = [
-    "Django==4.0.5",
-    "django-extensions==3.1.5",
+    "Django>=5.2,<6.0",
+    "django-extensions>=4.0",
 ]
 
 [project.optional-dependencies]

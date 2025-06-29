@@ -1,5 +1,8 @@
 # Magic the Gathering Django ORM demo
 
+## Requirements
+* Python 3.10 or higher (required for Django 5.2+)
+
 ## Install instructions with uv (Recommended)
 * Clone the repo
 * Install [uv](https://docs.astral.sh/uv/getting-started/installation/) if you haven't already
