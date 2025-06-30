@@ -161,6 +161,8 @@ Claude requires you to run everything locally. You need GitHub SSH and `gh` CLI 
 
 Jules runs entirely in the browser. It boots a VM, asks you to approve a plan, and executes.
 
+Tests were stopped after 2 failed so badly
+
 ### Add `.gitignore`  
 🔗 [PR #7](https://github.com/jeffnb/pyvegas-mtg-django/pull/7)
 
@@ -170,7 +172,7 @@ Jules runs entirely in the browser. It boots a VM, asks you to approve a plan, a
 
 **Cons:**
 - Overrode and lost existing config
-- Doesn’t always create PRs (sometimes commits directly)
+- Can't create PRs
 
 ### Convert to `uv`  
 🔗 [PR #13](https://github.com/jeffnb/pyvegas-mtg-django/pull/13)
@@ -243,7 +245,7 @@ Each tool had strengths and tradeoffs:
 | Task               | Best Tool | Why                                                 |
 |--------------------|-----------|------------------------------------------------------|
 | Add `.gitignore`   | Claude    | Clean, local, interactive, no weird file check-ins   |
-| Convert to `uv`    | Copilot   | Fast, mostly correct, useful documentation           |
+| Convert to `uv`    | Claude    | Correct, tested, useful documentation                |
 | Add Tests          | Claude    | More coverage, better debugging loop                 |
 | Upgrade Django     | Claude    | Detected Python version issues and ran `uv` properly |
 | Code Review        | Copilot   | Inline, contextual, balanced tone                    |
